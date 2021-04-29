@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'engin';
+    src: url('fonts/engin-webfont.woff2') format('woff2'),
+         url('fonts/engin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'apoc';
+    src: url('fonts/Apoc-Light-Trial.woff2') format('woff2'),
+         url('fonts/Apoc-Light-Trial.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'apocbold';
+    src: url('fonts/Apoc-Bold-Trial.woff2') format('woff2'),
+         url('fonts/Apoc-Bold-Trial.woff2') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@import url("https://use.typekit.net/krl1uqt.css");
+
+:root {
+    font-size: 1.5vw;
+    line-height: 1.4em;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --purple: rgb(75, 46, 199);
+}
+
+main {
+    min-height: calc(100vh - 5rem);
+}
+
+/*------------------*
+        general  
+*------------------*/
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+}
+
+.left {
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.right {
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.current-section{
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/*------------------*
+        header  
+*------------------*/
+.container nav ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 50.4vw;
+    justify-content: space-between;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem 1.1rem;
+    font-size: 1.6rem;
+}
+
+/*------------------*
+       left  
+*------------------*/
+.left {
+    border-right: 0.01rem solid black ;
+}
+
+.landpage .chain-land {
+    transform: rotate(90deg);
+    position: fixed;
+    right: 25vw;
+    bottom: 50vh;
+    pointer-events: none;
+}
+
+.container .mm-tittle {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    line-height: 1em ;
+    text-align: center;
+    margin: 7rem 0 4rem 0;
+}
+
+.container .catalogue-description {
+    font-family: 'apoc';
+    font-variant-ligatures: none;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin: 2rem 1.2rem 1rem 1.2rem;
+}
+
+/*------------------*
+       right  
+*------------------*/
+
+.cart {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+.cart2 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem 1rem;
+    right: .2vw;
+    font-size: 1.6rem;
+    position: fixed;
+}
+
+.items {
+    font-family: 'engin';
+    border-spacing: 2rem;
+    font-size: 1.5rem;
+}
+
+.word-break-upper {
+    margin-right: 2.3rem;
+}
+
+.word-break-tittle {
+    margin: -15.5rem;
+}
+
+.items .mm-columns {
+    border: .01rem solid var(--black);
+    height: 50vh;
+    text-align: center;
+    line-height: 50vh;
+    border-top: 0;
+    border-left: 0;
+}
+
+.items .mm-columns:hover {
+    border: .01rem solid var(--purple);
+    border-top: 0;
+    border-left: 0;
+}
+
+/******OBJECTS******/
+.onhover:hover + .hide {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    width: 20rem;
+    top: 1rem;
+}
+
+.hide-dice {
+    left: 7vw;
+}
+
+.hide-book{
+    left: 20vw;
+}
+
+.hide-card {
+    top: 25vw;
+}
+
+.hide-earrings {
+    top: 26.5vw;
+    right: 1vw;
+}
+
+.hide-step{
+    top: 45vw;
+}
+
+.hide-crucifix {
+    top: 50vw;
+    right: 1vw;
+}
+
+.hide-coin {
+    top: 78vw;
+    left: 4vw;
+}
+
+.hide-clock {
+    top: 69vw;
+    right: 5vw;
+}
+
+.hide-chain {
+    top: 100vw;
+    width: 35rem;
+}
+
+.hide-cigarette {
+    top: 100vw;
+    right: 1vw;
+}
+
+.hide-mirror {
+    top: 128vw;
+    right: 15vw;
+}
+
+.hide-pen {
+    top: 125vw;
+    right: 1vw;
+}
+
+.hide-hammer {
+    top: 150vw;
+}
+
+.hide-umbrella {
+    top: 150vw;
+    right: 4vw;
+}
+
+.hide-candle {
+    top: 175vw;
+    left: 2vw;
+}
+
+.hide-keychain {
+    top: 175vw;
+    right: 1vw;
+}
+
+.hide-plate {
+    top: 205vw;
+    width: 25rem;
+}
+
+.hide-broom {
+    top: 200vw;
+    transform: rotate(160deg);
+}
+
+.hide-pendulum {
+    top: 230vw;
+    transform: rotate(20deg);
+}
+
+.hide-bulb {
+    top: 225vw;
+    right: 1vw;
+    width: 18rem;
+}
+
+.hide-spoon {
+    top: 250vw;
+}
+
+.hide-suitcase {
+    top: 250vw;
+    right: 1vw;
+}
+/******OBJECTS******/
+.total {
+    position: fixed;
+    bottom: 0;
+    margin: 1.1rem 0;
+    z-index: 0;
+}
+
+#main-drag {
+  position: absolute;
+  z-index: 9;
+  left: 10%;
+}
+
+#main-drag-obj{
+  cursor: move;
+  z-index: 10;
+}
+
+/*FOR WORD WARP*/
+.object-tittle {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    left: 74.5%;
+    top: 26.1%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.object-tittle-warp {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 17vw;
+    margin-top: 12.22vw;
+    position: fixed;
+}
+
+.object-tittle-warp-2 {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 15vw;
+    margin-top: 12.22vw;
+    position: fixed;
+}
+
+.object-tittle-warp-3 {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 11vw;
+    margin-top: 12.22vw;
+    position: fixed;
+}
+
+.object-tittle-warp-4 {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 17vw;
+    margin-top: 12.22vw;
+    position: fixed;
+}
+
+.tittle-margin {
+    margin-top: 11.84rem;
+    margin-right: -4.27rem;
+}
+
+.tittle-margin-2 {
+    margin-top: 11.84rem;
+    margin-right: -5.8rem;
+}
+
+.tittle-margin-3 {
+    margin-top: 11.84rem;
+    margin-right: 8.4rem;
+}
+
+.tittle-margin-4 {
+    margin-top: 11.84rem;
+    margin-right: -5.1rem;
+}
+/*FOR WORD WARP*/
+
+.description-box .object-description {
+    margin: 1rem 1rem;
+    font-family: 'apoc';
+    font-variant-ligatures: none;
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+
+.description-box .object-values {
+    font-family: 'apoc';
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+
+.description-box .object-values ol {
+    list-style: none;
+}
+
+.description-box .object-values span {
+    font-family: 'apoc-bold';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inside-button {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 0.6rem;
+    margin: 0 1rem;
+    border: .1rem solid var(--purple);
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 0 .6rem;
+}
+
+/*------------------*
+      scroll bar  
+*------------------*/
+::-webkit-scrollbar {
+    width: 0.2rem;
+}
+  
+  ::-webkit-scrollbar-track {
+    background: var(--white); 
+}
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--purple); 
+}
+
+/*------------------*
+    media queries  
+*------------------*/
+@media screen and (max-width: 1025px) {
+    :root{
+        font-size: 2.5vw; 
+    }
+
+    .split {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        border-top: 1px solid black;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    :root{
+        font-size: 2.5vw;
+    }
+
+    .split {
+        width: 100%;
+        height: 50vh;
+        border-top: 1px solid black;
+    }
+
+    .container nav ul li {
+        margin-right: 52.5vw;
+    }
+
+    .container .mm-tittle {
+        font-size: 4.55rem;
+        line-height: 1em ;
+    }
+
+    .items {
+        font-size: 2rem;
+    }
+
+    .word-break-upper {
+        margin-right: 3rem;
+    }
+
+    .word-break-tittle {
+        margin: -24.4rem 0 0 0;
+    }
+
+    .onhover:hover + .hide {
+        visibility: none;
+        opacity: 0;
+    }
+
+    .inside-object {
+        width: 2rem;
+    }
+
+    .object-tittle {
+        font-size: 2.7rem;
+        margin-bottom: 11.3rem;
+        top: 7.1rem;
+        left: 50vw;
+        text-align: center;
+    }
+
+    .total {
+        position: fixed;
+        bottom: 0;    
+    }
+}
+
+@media screen and (max-width: 577px) {
+    :root{
+        font-size: 4vw;
+    }
+
+    .chain-land {
+        width: 45rem;
+        left: -45vw;
+        top: -25vh;
+    }
+
+    .split {
+        width: 100%;
+        height: 50vh;
+        border-top: .01rem solid var(--black);
+    }
+
+    .container nav ul li {
+        margin-right: 25vw;
+    }
+
+    .container .mm-tittle {
+        font-size: 2.7rem;
+        line-height: 1.05em ;
+    }
+
+    .onhover:hover + .hide {
+        display: none;
+    }
+
+    .word-break-upper {
+        margin-right: 4rem;
+    }
+
+    .word-break-tittle {
+        margin: -19.65rem 0 0 0;
+    }
+
+    .object-tittle {
+        font-size: 2.7rem;
+        position: relative;
+        margin-bottom: 11.3rem;
+        top: 7.1rem;
+        left: 50vw;
+        text-align: center;
+    }
+
+    .items {
+        font-size: 2.46rem;
+    }
+
+    .object-tittle-warp {
+        font-size: 2.7rem;
+        position: relative;
+        margin: 8rem 5.1rem;
+        left: 4.5vw;
+    }
+
+    .tittle-margin {
+        margin: -6.5rem 5.1rem;
+        margin-bottom: 5rem;
+        left: 4.5vw;
+    }
+
+    .object-tittle-warp-2 {
+        font-size: 2.7rem;
+        position: relative;
+        margin: 8rem 2.6rem;
+        left: 4.5vw;
+    }
+
+    .tittle-margin-2 {
+        margin: -6.5rem 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .object-tittle-warp-3 {
+        font-size: 2.7rem;
+        position: relative;
+        margin: 8rem 2.6rem;
+        left: 10vw;
+    }
+
+    .tittle-margin-3 {
+        margin: -6.5rem 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .total {
+     position: relative;   
+    }
+
+    .inside-object {
+        width: 20rem;
+        margin: -25vw 0 0 0;
+    }
+
+}
