@@ -152,6 +152,7 @@ a:hover {
     right: .2vw;
     font-size: 1.6rem;
     position: fixed;
+    z-index: 10;
 }
 
 .items {
@@ -308,18 +309,19 @@ a:hover {
     bottom: 0;
     margin: 1.1rem 0;
     z-index: 0;
+    font-variant-ligatures: none;
 }
 
 #main-drag {
-  position: absolute;
-  z-index: 9;
-  left: 10%;
-}
-
-#main-drag-obj{
-  cursor: move;
-  z-index: 10;
-}
+    position: absolute;
+    z-index: 9;
+    left: 10%;
+  }
+  
+  #main-drag-obj{
+    cursor: move;
+    z-index: 10;
+  }
 
 /*FOR WORD WARP*/
 .object-tittle {
@@ -363,6 +365,22 @@ a:hover {
     position: fixed;
 }
 
+.object-tittle-warp-5 {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 8vw;
+    margin-top: -17.6vw;
+    position: fixed;
+}
+
+.object-tittle-warp-6 {
+    font-family: 'engin';
+    font-size: 3.7rem;
+    right: 19vw;
+    margin-top: -17.6vw;
+    position: fixed;
+}
+
 .tittle-margin {
     margin-top: 11.84rem;
     margin-right: -4.27rem;
@@ -381,6 +399,16 @@ a:hover {
 .tittle-margin-4 {
     margin-top: 11.84rem;
     margin-right: -5.1rem;
+}
+
+.tittle-margin-5 {
+    margin-top: -8.07rem;
+    margin-right: 13rem;
+}
+
+.tittle-margin-6 {
+    margin-top: -8.07rem;
+    margin-right: -5.9rem;
 }
 /*FOR WORD WARP*/
 
@@ -590,6 +618,18 @@ a:hover {
     }
 
     .tittle-margin-3 {
+        margin: -6.5rem 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .object-tittle-warp-4 {
+        font-size: 2.7rem;
+        position: relative;
+        margin: 8rem 2.6rem;
+        left: 10vw;
+    }
+
+    .tittle-margin-4 {
         margin: -6.5rem 2.5rem;
         margin-bottom: 5rem;
     }
