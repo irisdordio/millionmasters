@@ -1,8 +1,3 @@
-//BACK
-function goBack() {
-    window.history.back();
-}
-
 //DRAG OBJECTS
 dragElement(document.getElementById("main-drag"));
 
