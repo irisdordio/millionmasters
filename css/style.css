@@ -565,7 +565,6 @@ a:hover {
         position: fixed;
         bottom: 0;    
     }
-
     
 }
 
@@ -587,7 +586,7 @@ a:hover {
     }
 
     .container nav ul li {
-        margin-right: 25vw;
+        margin-right: 19vw;
     }
 
     .container .mm-tittle {
