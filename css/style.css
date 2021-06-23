@@ -108,6 +108,7 @@ a:hover {
     position: fixed;
     right: 25vw;
     bottom: 50vh;
+    background-size: auto;
     pointer-events: none;
 }
 
@@ -465,6 +466,13 @@ a:hover {
 /*------------------*
     media queries  
 *------------------*/
+@media screen and (max-width: 1440px) {
+    .chain-land {
+        left: -45.5vw;
+    }
+}
+
+
 @media screen and (max-width: 1025px) {
     :root{
         font-size: 2.5vw; 
@@ -476,12 +484,37 @@ a:hover {
         height: 50vh;
         border-top: 1px solid black;
     }
-}
 
+    .chain-land {
+        width: 70rem;
+        left: -45vw;
+        top: -43vh;
+    }
+
+    .container nav ul {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        right: 0rem;
+    }
+}
 
 @media screen and (max-width: 769px) {
     :root{
         font-size: 2.5vw;
+    }
+
+    .chain-land {
+        width: 60rem;
+        left: -25vw;
+        top: -30vh;
+    }
+
+    .container nav ul {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        right: 0rem;
     }
 
     .split {
@@ -532,6 +565,8 @@ a:hover {
         position: fixed;
         bottom: 0;    
     }
+
+    
 }
 
 @media screen and (max-width: 577px) {
