@@ -197,7 +197,7 @@ a.link-unactive {
     font-family: 'apoc';
     font-variant-ligatures: none;
     text-align: justify;
-    font-size: min(max(1rem, 2.2vw), 32px);
+    font-size: min(max(1rem, 2.2vw), 25px);
     line-height: 1.2em;
 }
 
@@ -390,11 +390,11 @@ img.image {
 
 .object-description {
     margin-bottom: 1rem;
-    font-size: min(max(1rem, 2.2vw), 32px);
+    font-size: min(max(1rem, 2.2vw), 22px);
 }
 
 .object-attributes {
-    font-size: min(max(1rem, 2.2vw), 32px);
+    font-size: min(max(1rem, 2.2vw), 22px);
 }
 
 @media screen and (max-width: 1024px) {
