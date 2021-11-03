@@ -412,9 +412,6 @@ img.image {
     color: white;
 }
 
-/*------------------*
-    media queries  
-*------------------*/
 @media screen and (max-width: 1024px) {
     :root {
         font-size: 1.5vw; 
