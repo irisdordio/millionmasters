@@ -197,13 +197,19 @@ a.link-unactive {
     font-family: 'apoc';
     font-variant-ligatures: none;
     text-align: justify;
-    font-size: min(max(1rem, 2.2vw), 25px);
+    font-size: min(max(1rem, 2.2vw), 32px);
     line-height: 1.2em;
+}
+
+@media screen and (max-width: 1440px) {
+    .catalogue-description {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .catalogue-description {
-        font-size: 22.5px;
+        font-size: 23px;
     }
 }
 
@@ -308,17 +314,6 @@ img.object-3d {
     z-index: 1;
 }
 
-/*
-.left-item-position img {
-    margin-top: 5rem;
-    left: 4rem;
-}
-
-.right-item-position img {
-    top: 3rem;
-}
-*/
-
 .object-3d {
     position: absolute;
     display: grid;
@@ -368,15 +363,8 @@ img.image {
     z-index: 10;
 }
 
-.text-scroll {
-    
-    overflow: scroll;
-}
-
 .description-box {
     margin: 1rem;
-    bottom: 0;
-    position: fixed;
 }
 
 @media screen and (max-width: 767px) {
@@ -388,18 +376,20 @@ img.image {
     }
 }
 
-.object-description {
+.object-description, .object-attributes  {
     margin-bottom: 1rem;
-    font-size: min(max(1rem, 2.2vw), 22px);
+    font-size: min(max(1rem, 2.2vw), 32px);
 }
 
-.object-attributes {
-    font-size: min(max(1rem, 2.2vw), 22px);
+@media screen and (max-width: 1440px) {
+    .object-description, .object-attributes {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .object-description, .object-attributes {
-        font-size: 22.5px;
+        font-size: 23px;
     }
 }
 
@@ -415,14 +405,6 @@ img.image {
     width: fit-content;
     z-index: 1;
 }
-
-/*
-@media screen and (max-width: 767px) {
-    .offer-btn a {
-
-    }
-}
-*/
 
 .offer-btn a:hover {
     background-color: var(--purple);
