@@ -338,6 +338,7 @@ img.object-3d {
     font-size: 3.7rem;
     text-align: center;
     margin-top: 8.13rem;
+    margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -365,6 +366,11 @@ img.image {
 #main-drag-obj{
     cursor: move;
     z-index: 10;
+}
+
+.text-scroll {
+    
+    overflow: scroll;
 }
 
 .description-box {
