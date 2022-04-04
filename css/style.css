@@ -126,7 +126,7 @@ a.link-unactive {
 }
 
 ::-webkit-scrollbar {
-    width: 0.2rem;
+    width: 8px
 }
   
 ::-webkit-scrollbar-track {
@@ -177,6 +177,13 @@ a.link-unactive {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .container nav ul {
+        font-size: 1.5rem;
+        margin: .5rem 1.3rem;
+    }
+}
+
 .mm-tittle {
     font-family: 'engin';
     font-size: 3.7rem;
@@ -185,11 +192,16 @@ a.link-unactive {
     margin: 6rem 0 4rem 0;
 }
 
-
 @media screen and (max-width: 767px) {
     .mm-tittle {
         font-size: 10.9vw;
         margin: 8rem 0 3rem 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .mm-tittle {
+        margin: 4.9rem 0 3rem 0;
     }
 } 
 
@@ -216,6 +228,12 @@ a.link-unactive {
 @media screen and (max-width: 767px) {
     .catalogue-description {
         margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .catalogue-description {
+        margin: 0;
     }
 }
 
@@ -255,6 +273,13 @@ a.link-unactive {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .contact-btn, .next-btn, .back-btn {
+        font-size: 1.5rem;
+        margin: .5rem 1.4rem;
+    }
+}
+
 .right-border {
     border-right: .01rem solid var(--black);
     margin: -1rem 0;
@@ -275,10 +300,17 @@ a.link-unactive {
     padding: 7.79rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
     .item-tittle {
         font-size: 3rem;
         padding: 18.8rem 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .item-tittle {
+        font-size: 2rem;
+        padding: 15rem 0;
     }
 }
 
@@ -289,7 +321,7 @@ a.link-unactive {
   margin: -4.2% 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 78px) {
     .word-break {
         margin: -6.95% 0;
         line-height: 1em;
@@ -312,6 +344,13 @@ img.object-3d {
     width: 100%;
     height: auto;
     z-index: 1;
+}
+
+@media screen and (max-width: 78px) {
+    img.object-3d {
+        width: 10rem;
+        left: 5rem;
+    }
 }
 
 .object-3d {
@@ -369,10 +408,10 @@ img.image {
 
 @media screen and (max-width: 767px) {
     .description-box {
-        margin: 3.5rem 2rem;
+        margin: 3.5rem 3rem;
         bottom: unset;
         position: initial;
-        padding: 2.5rem 0;
+        padding: 3.5rem 0;
     }
 }
 
@@ -393,10 +432,14 @@ img.image {
     }
 }
 
+.offer-btn {
+    padding-bottom: 3.9rem;
+}
+
 .offer-btn a {
     text-align: right;
-    margin-top: 1rem;
-    border: .1rem solid var(--black);
+    margin-top: .35rem;
+    border: .15rem solid var(--black);
     border-radius: 100rem;
     padding: .2rem .8rem;
     font-size: .7rem;
@@ -405,6 +448,12 @@ img.image {
     width: fit-content;
     z-index: 1;
 }
+
+@media screen and (max-width: 887px) {
+    .offer-btn a {
+        border-width: .2rem;
+    }
+} 
 
 .offer-btn a:hover {
     background-color: var(--purple);
